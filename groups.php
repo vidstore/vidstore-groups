@@ -12,7 +12,7 @@ class Groups_Group {
 		global $wpdb;
 		$group_table = "{$wpdb->prefix}groups_group";
 		return $wpdb->get_row( $wpdb->prepare(
-			"SELECT * FROM $group_table WHERE group_id = %d",
+			"SELECT * FROM {$group_table} WHERE group_id = %d",
 			$group_id
 		));
 	}
@@ -23,7 +23,7 @@ class Groups_User_Group {
 		global $wpdb;
 		$user_group_table = "{$wpdb->prefix}groups_user_group";
 		return $wpdb->get_row( $wpdb->prepare(
-			"SELECT * FROM $user_group_table WHERE user_id = %d AND group_id = %d",
+			"SELECT * FROM {$user_group_table} WHERE user_id = %d AND group_id = %d",
 			$user_id,
 			$group_id
 		));
