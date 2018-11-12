@@ -1,5 +1,12 @@
 <?php
 
+if ( ! function_exists( '_groups_get_tablename' ) {
+	function _groups_get_tablename( $table ) {
+		global $wpdb;
+		return "{$wpdb->prefix}groups_{table}";
+	}
+}
+
 if ( ! class_exists( 'Groups_User' ) ) {
 	class Groups_User {
 		public $user;
