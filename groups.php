@@ -3,7 +3,7 @@
 if ( ! function_exists( '_groups_get_tablename' ) {
 	function _groups_get_tablename( $table ) {
 		global $wpdb;
-		return "{$wpdb->prefix}groups_{table}";
+		return "{$wpdb->prefix}groups_{$table}";
 	}
 }
 
