@@ -1,5 +1,15 @@
 <?php
-
+/**
+ * Vidstore Groups
+ *
+ * Replace old groups plugins
+ *
+ * Plugin Name:       Vidstore Groups
+ * Description:       Replace old groups plugins
+ * Author:            Vidstore
+ * Author URI:        http://vidstore.com/
+ * Text Domain:       vidstore-groups
+ */
 if ( ! function_exists( '_groups_get_tablename' ) ) {
 	function _groups_get_tablename( $table ) {
 		global $wpdb;
